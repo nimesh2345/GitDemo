@@ -20,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self sayHello];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,6 +34,11 @@
     self.sum = a + b;
     
     NSLog(@"The result is: %d", self.sum);
+}
+
+- (void)sayHello
+{
+    NSLog(@"Hello");
 }
 
 @end
